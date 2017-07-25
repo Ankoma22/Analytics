@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7550F4F11F279FEE00DEE9D1 /* AnalyticProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7550F4EF1F279FEE00DEE9D1 /* AnalyticProvider.swift */; };
+		7550F4F21F279FEE00DEE9D1 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7550F4F01F279FEE00DEE9D1 /* Analytics.swift */; };
+		7550F4F51F279FF700DEE9D1 /* AmplitudeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7550F4F31F279FF700DEE9D1 /* AmplitudeProvider.swift */; };
+		7550F4F61F279FF700DEE9D1 /* MixpanelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7550F4F41F279FF700DEE9D1 /* MixpanelProvider.swift */; };
 		A9D6E92A1F2731650002F827 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6E9291F2731650002F827 /* AppDelegate.swift */; };
 		A9D6E92C1F2731650002F827 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6E92B1F2731650002F827 /* ViewController.swift */; };
 		A9D6E92F1F2731650002F827 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D6E92D1F2731650002F827 /* Main.storyboard */; };
 		A9D6E9311F2731650002F827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D6E9301F2731650002F827 /* Assets.xcassets */; };
 		A9D6E9341F2731650002F827 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D6E9321F2731650002F827 /* LaunchScreen.storyboard */; };
-		A9D6E93C1F27318F0002F827 /* AnalyticProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6E93B1F27318F0002F827 /* AnalyticProvider.swift */; };
-		A9D6E93E1F2732700002F827 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6E93D1F2732700002F827 /* Analytics.swift */; };
-		A9D6E9411F2732C30002F827 /* MixpanelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6E9401F2732C30002F827 /* MixpanelProvider.swift */; };
-		A9D6E9451F2733AA0002F827 /* AmplitudeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6E9441F2733AA0002F827 /* AmplitudeProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7550F4EF1F279FEE00DEE9D1 /* AnalyticProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnalyticProvider.swift; path = Analytics/AnalyticProvider.swift; sourceTree = "<group>"; };
+		7550F4F01F279FEE00DEE9D1 /* Analytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Analytics.swift; path = Analytics/Analytics.swift; sourceTree = "<group>"; };
+		7550F4F31F279FF700DEE9D1 /* AmplitudeProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AmplitudeProvider.swift; path = Analytics/Providers/AmplitudeProvider.swift; sourceTree = "<group>"; };
+		7550F4F41F279FF700DEE9D1 /* MixpanelProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MixpanelProvider.swift; path = Analytics/Providers/MixpanelProvider.swift; sourceTree = "<group>"; };
 		A9D6E9261F2731650002F827 /* Analytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Analytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D6E9291F2731650002F827 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9D6E92B1F2731650002F827 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,10 +30,6 @@
 		A9D6E9301F2731650002F827 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9D6E9331F2731650002F827 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9D6E9351F2731650002F827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9D6E93B1F27318F0002F827 /* AnalyticProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticProvider.swift; sourceTree = "<group>"; };
-		A9D6E93D1F2732700002F827 /* Analytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
-		A9D6E9401F2732C30002F827 /* MixpanelProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MixpanelProvider.swift; path = Providers/MixpanelProvider.swift; sourceTree = "<group>"; };
-		A9D6E9441F2733AA0002F827 /* AmplitudeProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AmplitudeProvider.swift; path = Providers/AmplitudeProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +43,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7550F4ED1F279FDB00DEE9D1 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				7550F4EF1F279FEE00DEE9D1 /* AnalyticProvider.swift */,
+				7550F4F01F279FEE00DEE9D1 /* Analytics.swift */,
+				7550F4EE1F279FE200DEE9D1 /* Providers */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		7550F4EE1F279FE200DEE9D1 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				7550F4F31F279FF700DEE9D1 /* AmplitudeProvider.swift */,
+				7550F4F41F279FF700DEE9D1 /* MixpanelProvider.swift */,
+			);
+			name = Providers;
+			sourceTree = "<group>";
+		};
 		A9D6E91D1F2731650002F827 = {
 			isa = PBXGroup;
 			children = (
@@ -62,26 +81,15 @@
 		A9D6E9281F2731650002F827 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				A9D6E93F1F2732A90002F827 /* Providers */,
+				7550F4ED1F279FDB00DEE9D1 /* Analytics */,
 				A9D6E9291F2731650002F827 /* AppDelegate.swift */,
 				A9D6E92B1F2731650002F827 /* ViewController.swift */,
 				A9D6E92D1F2731650002F827 /* Main.storyboard */,
 				A9D6E9301F2731650002F827 /* Assets.xcassets */,
 				A9D6E9321F2731650002F827 /* LaunchScreen.storyboard */,
 				A9D6E9351F2731650002F827 /* Info.plist */,
-				A9D6E93B1F27318F0002F827 /* AnalyticProvider.swift */,
-				A9D6E93D1F2732700002F827 /* Analytics.swift */,
 			);
 			path = Analytics;
-			sourceTree = "<group>";
-		};
-		A9D6E93F1F2732A90002F827 /* Providers */ = {
-			isa = PBXGroup;
-			children = (
-				A9D6E9441F2733AA0002F827 /* AmplitudeProvider.swift */,
-				A9D6E9401F2732C30002F827 /* MixpanelProvider.swift */,
-			);
-			name = Providers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,10 +166,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9D6E92C1F2731650002F827 /* ViewController.swift in Sources */,
-				A9D6E93C1F27318F0002F827 /* AnalyticProvider.swift in Sources */,
-				A9D6E9451F2733AA0002F827 /* AmplitudeProvider.swift in Sources */,
-				A9D6E93E1F2732700002F827 /* Analytics.swift in Sources */,
-				A9D6E9411F2732C30002F827 /* MixpanelProvider.swift in Sources */,
+				7550F4F11F279FEE00DEE9D1 /* AnalyticProvider.swift in Sources */,
+				7550F4F21F279FEE00DEE9D1 /* Analytics.swift in Sources */,
+				7550F4F51F279FF700DEE9D1 /* AmplitudeProvider.swift in Sources */,
+				7550F4F61F279FF700DEE9D1 /* MixpanelProvider.swift in Sources */,
 				A9D6E92A1F2731650002F827 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +336,7 @@
 				A9D6E93A1F2731650002F827 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
