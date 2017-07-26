@@ -46,8 +46,8 @@
 		7550F4ED1F279FDB00DEE9D1 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				7550F4EF1F279FEE00DEE9D1 /* AnalyticProvider.swift */,
 				7550F4F01F279FEE00DEE9D1 /* Analytics.swift */,
+				7550F4EF1F279FEE00DEE9D1 /* AnalyticProvider.swift */,
 				7550F4EE1F279FE200DEE9D1 /* Providers */,
 			);
 			name = Analytics;
@@ -297,6 +297,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8W5JFQ3FD2;
 				INFOPLIST_FILE = Analytics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ankoma.Analytics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -310,6 +311,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8W5JFQ3FD2;
 				INFOPLIST_FILE = Analytics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ankoma.Analytics;
 				PRODUCT_NAME = "$(TARGET_NAME)";

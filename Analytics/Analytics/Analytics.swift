@@ -47,14 +47,14 @@ public final class Analytics {
     }
     
     fileprivate func setupMixpanel(_ token: String) {
-#if MIXPANEL
+#if HAS_MIXPANEL
         let mixpanelProvider = MixpanelProvider(withToken: token)
         providers.append(mixpanelProvider)
 #endif
     }
     
     fileprivate func setupAmplitude(_ token: String) {
-#if AMPLITUDE
+#if HAS_AMPLITUDE
         let amplitudeProvider = AmplitudeProvider(withToken: token)
         providers.append(amplitudeProvider)
 #endif

@@ -12,7 +12,23 @@ Analytics is written in Swift. It currently supports Mixpanel and Amplitude
   s.author           = { 'Andrei Malyhin' => 'ankoma22@gmail.com' }
   s.source           = { :git => 'https://github.com/Ankoma22/Analytics.git', :tag => s.version.to_s }
  
-  s.ios.deployment_target = '10.0'
-  s.source_files = 'Analytics/Analytics.swift'
- 
+  s.ios.deployment_target = '9.0'
+
+  s.source_files = ['Analytics/Analytics/*.swift']
+  
+  mixpanel         = { :spec_name => "Mixpanel",            :dependency => "Mixpanel-swift" }
+  amplitude        = { :spec_name => "Amplitude",           :dependency => "Amplitude-iOS" }
+
+  analytic_providers = [mixpanel, amplitude]
+
+  s.subspec 'Mixpanel' do |sp|
+    sp.source_files = ["Analytics/Analytics/Providers/MixpanelProvider.swift"]
+    sp.prefix_header_contents = "#define HAS_MIXPANEL 1"
+  end
+
+  s.subspec 'Amplitude' do |sp|
+    sp.source_files = ["Analytics/Analytics/Providers/AmplitudeProvider.swift"]
+    sp.prefix_header_contents = "#define HAS_AMPLITUDE 1"
+  end
+
 end

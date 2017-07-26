@@ -7,7 +7,7 @@
 //
 
 import Foundation
-#if MIXPANEL
+#if HAS_MIXPANEL
 import MixpanelAppex
 
 public final class MixpanelProvider: AnalyticsProvider {

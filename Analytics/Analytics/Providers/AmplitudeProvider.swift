@@ -7,7 +7,7 @@
 //
 
 import Foundation
-#if AMPLITUDE
+#if HAS_AMPLITUDE
 import Amplitude_iOS
 
 public final class AmplitudeProvider: AnalyticsProvider {
