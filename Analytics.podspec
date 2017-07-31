@@ -24,13 +24,13 @@ Analytics is written in Swift. It currently supports Mixpanel and Amplitude
   s.subspec 'Mixpanel' do |sp|
     sp.source_files = ["Analytics/Analytics/Providers/MixpanelProvider.swift"]
     sp.prefix_header_contents = "#define HAS_MIXPANEL 1"
-    sp.dependency = "Mixpanel-swift"
+    sp.dependency "Mixpanel-swift"
   end
 
   s.subspec 'Amplitude' do |sp|
     sp.source_files = ["Analytics/Analytics/Providers/AmplitudeProvider.swift"]
     sp.prefix_header_contents = "#define HAS_AMPLITUDE 1"
-    sp.dependency = "Amplitude-iOS"
+    sp.dependency "Amplitude-iOS"
   end
 
 end
