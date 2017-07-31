@@ -15,7 +15,7 @@ public enum Provider {
 
 public final class Analytics {
     
-    static let shared = Analytics()
+    public static let shared = Analytics()
     
     fileprivate var providers: [AnalyticProvider] = []
     
