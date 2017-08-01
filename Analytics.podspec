@@ -15,7 +15,7 @@ Analytics is written in Swift. It currently supports Mixpanel and Amplitude
   s.ios.deployment_target = '9.0'
 
   s.source_files = ['Analytics/Analytics/*.swift']
-  s.xcconfig         = { 'OTHER_SWIFT_FLAGS[config=Debug]' => 'HAS_MIXPANEL' }
+  s.xcconfig         = { 'OTHER_SWIFT_FLAGS' =>  "HAS_MIXPANEL" "HAS_AMPLITUDE" }
   mixpanel         = { :spec_name => "Mixpanel",            :dependency => "Mixpanel-swift" }
   amplitude        = { :spec_name => "Amplitude",           :dependency => "Amplitude-iOS" }
 
