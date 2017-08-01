@@ -17,7 +17,7 @@ Analytics is written in Swift. It currently supports Mixpanel and Amplitude
   s.source_files = ['Analytics/Analytics/*.swift']
 
   s.pod_target_xcconfig = {
-    'OTHER_SWIFT_FLAGS' => '$(inherited) -D HAS_MIXPANEL -D HAS_AMPLITUDE'
+    'OTHER_SWIFT_FLAGS' => '$(inherited) -D HAS_MIXPANEL -D HAS_AMPLITUDE -D HAS_FABRIC'
   }
 
   mixpanel         = { :spec_name => "Mixpanel",            :dependency => "Mixpanel-swift-appex" }
@@ -39,6 +39,7 @@ Analytics is written in Swift. It currently supports Mixpanel and Amplitude
   s.subspec 'Fabric' do |sp|
     sp.source_files = ["Analytics/Analytics/Providers/FabricProvider.swift"]
     sp.dependency "Fabric"
+    sp.dependency "Crashlytics"
   end
 
 end
