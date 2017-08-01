@@ -23,14 +23,22 @@ Analytics is written in Swift. It currently supports Mixpanel and Amplitude
 
   s.subspec 'Mixpanel' do |sp|
     sp.source_files = ["Analytics/Analytics/Providers/MixpanelProvider.swift"]
-    sp.prefix_header_contents = "#define HAS_MIXPANEL 1"
     sp.dependency "Mixpanel-swift"
   end
 
   s.subspec 'Amplitude' do |sp|
     sp.source_files = ["Analytics/Analytics/Providers/AmplitudeProvider.swift"]
-    sp.prefix_header_contents = "#define HAS_AMPLITUDE 1"
     sp.dependency "Amplitude-iOS"
   end
+
+  post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        if target.name == 'Analytics'
+            target.build_configurations.each do |config|
+                    config.build_settings['OTHER_SWIFT_FLAGS'] = 'HAS_MIXPANEL'
+                    config.build_settings['OTHER_SWIFT_FLAGS'] = 'HAS_AMPLITUDE'
+        end
+    end
+end
 
 end
