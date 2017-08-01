@@ -23,5 +23,5 @@ public final class FabricProvider: AnalyticProvider {
         Crashlytics.sharedInstance().setObjectValue(to, forKey: property)
     }
 }
-    
+
 #endif //HAS_FABRIC
