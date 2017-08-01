@@ -10,7 +10,7 @@ import Foundation
 #if HAS_AMPLITUDE
 import Amplitude_iOS
 
-public final class AmplitudeProvider: AnalyticsProvider {
+public final class AmplitudeProvider: AnalyticProvider {
     
     public init(withToken token: String) {
         Amplitude.instance().initializeApiKey(token)

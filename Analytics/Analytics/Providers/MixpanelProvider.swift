@@ -10,7 +10,7 @@ import Foundation
 #if HAS_MIXPANEL
 import MixpanelAppex
 
-public final class MixpanelProvider: AnalyticsProvider {
+public final class MixpanelProvider: AnalyticProvider {
     
     public init(withToken token: String) {
         Mixpanel.initialize(token: token)
