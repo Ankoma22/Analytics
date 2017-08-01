@@ -37,4 +37,5 @@ public final class MixpanelProvider: AnalyticProvider {
         Mixpanel.mainInstance().people.set(property: property, to: to)
     }
 }
-#endif
+    
+#endif//HAS_MIXPANEL

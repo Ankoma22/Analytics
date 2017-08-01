@@ -9,7 +9,6 @@
 import Foundation
 
 public protocol AnalyticProvider {
-    init(withToken token: String)
     func registerForRemoteNotifications(withToken deviceToken:Data)
     func track(_ event: String, params: [String : Any]?)
     func set(property: String, to: String)

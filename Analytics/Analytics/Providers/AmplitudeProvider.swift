@@ -30,4 +30,5 @@ public final class AmplitudeProvider: AnalyticProvider {
         Amplitude.instance().setUserProperties([property : to])
     }
 }
-#endif
+    
+#endif//HAS_AMPLITUDE

@@ -11,6 +11,7 @@
 		7550F4F21F279FEE00DEE9D1 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7550F4F01F279FEE00DEE9D1 /* Analytics.swift */; };
 		7550F4F51F279FF700DEE9D1 /* AmplitudeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7550F4F31F279FF700DEE9D1 /* AmplitudeProvider.swift */; };
 		7550F4F61F279FF700DEE9D1 /* MixpanelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7550F4F41F279FF700DEE9D1 /* MixpanelProvider.swift */; };
+		75B760CB1F308783000E1F0E /* FabricProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B760CA1F308783000E1F0E /* FabricProvider.swift */; };
 		A9D6E92A1F2731650002F827 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6E9291F2731650002F827 /* AppDelegate.swift */; };
 		A9D6E92C1F2731650002F827 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6E92B1F2731650002F827 /* ViewController.swift */; };
 		A9D6E92F1F2731650002F827 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D6E92D1F2731650002F827 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		7550F4F01F279FEE00DEE9D1 /* Analytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Analytics.swift; path = Analytics/Analytics.swift; sourceTree = "<group>"; };
 		7550F4F31F279FF700DEE9D1 /* AmplitudeProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AmplitudeProvider.swift; path = Analytics/Providers/AmplitudeProvider.swift; sourceTree = "<group>"; };
 		7550F4F41F279FF700DEE9D1 /* MixpanelProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MixpanelProvider.swift; path = Analytics/Providers/MixpanelProvider.swift; sourceTree = "<group>"; };
+		75B760CA1F308783000E1F0E /* FabricProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FabricProvider.swift; path = Analytics/Providers/FabricProvider.swift; sourceTree = "<group>"; };
 		A9D6E9261F2731650002F827 /* Analytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Analytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D6E9291F2731650002F827 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9D6E92B1F2731650002F827 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				7550F4F31F279FF700DEE9D1 /* AmplitudeProvider.swift */,
 				7550F4F41F279FF700DEE9D1 /* MixpanelProvider.swift */,
+				75B760CA1F308783000E1F0E /* FabricProvider.swift */,
 			);
 			name = Providers;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				7550F4F21F279FEE00DEE9D1 /* Analytics.swift in Sources */,
 				7550F4F51F279FF700DEE9D1 /* AmplitudeProvider.swift in Sources */,
 				7550F4F61F279FF700DEE9D1 /* MixpanelProvider.swift in Sources */,
+				75B760CB1F308783000E1F0E /* FabricProvider.swift in Sources */,
 				A9D6E92A1F2731650002F827 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

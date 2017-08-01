@@ -11,6 +11,19 @@ import Foundation
 public enum Provider {
     case mixpanel
     case amplitude
+    case fabric
+}
+
+public struct ProviderInfo {
+    let provider: Provider
+    let token: String?
+    let classes: [Any]?
+    
+    init(provider: Provider, token: String? = nil, classes: [Any]? = nil) {
+        self.provider = provider
+        self.token = token
+        self.classes = classes
+    }
 }
 
 public final class Analytics {
@@ -19,15 +32,16 @@ public final class Analytics {
     
     fileprivate var providers: [AnalyticProvider] = []
     
-    public func setup(withAnalyticsProviders providers: [Provider: String]) {
-        for (provider, token) in providers {
-            switch provider {
-            case .mixpanel: setupMixpanel(token)
-            case .amplitude: setupAmplitude(token)
+    public func setup(withAnalyticsProviders providers: [ProviderInfo]) {
+        for info in providers {
+            switch info.provider {
+            case .mixpanel: setupMixpanel(info.token!)
+            case .amplitude: setupAmplitude(info.token!)
+            case .fabric: setupFabric(info.classes!)
             }
         }
     }
-    
+
     public func registerForRemoteNotifications(withToken token: Data) {
         providers.forEach { provider in
             provider.registerForRemoteNotifications(withToken: token)
@@ -50,13 +64,20 @@ public final class Analytics {
 #if HAS_MIXPANEL
         let mixpanelProvider = MixpanelProvider(withToken: token)
         providers.append(mixpanelProvider)
-#endif
+#endif//HAS_MIXPANEL
     }
     
     fileprivate func setupAmplitude(_ token: String) {
 #if HAS_AMPLITUDE
         let amplitudeProvider = AmplitudeProvider(withToken: token)
         providers.append(amplitudeProvider)
-#endif
+#endif//HAS_AMPLITUDE
+    }
+    
+    fileprivate func setupFabric(_ kitClasses: [Any]) {
+#if HAS_FABRIC
+    let fabricProvider = FabricProvider(withKitClasses: kitClasses)
+    providers.append(fabricProvider)
+#endif//HAS_FABRIC
     }
 }
